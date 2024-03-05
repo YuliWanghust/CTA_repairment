@@ -14,7 +14,7 @@ The segmentation of cardiovascular arteries in 3D medical images holds significa
 
 ## Dataset
 
-![Visualizations of the PTR dataset.](data_generation.jpg)
+![Visualizations of the PTR dataset.](quali_res_1.png)
 
 The Pulmonary Tree Repairing (PTR) dataset is available [here](https://onedrive.live.com/?authkey=%21AEq1v5hZHJORzRA&id=66346B2D10575CA6%21252787&cid=66346B2D10575CA6). It consists of the following data splits:
 
