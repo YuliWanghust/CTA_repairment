@@ -1,10 +1,6 @@
 # CTA_repairment
 
-# Pulmonary-Tree-Repairing
-
-[MICCAI'23] Topology Repairing of Disconnected Pulmonary Airways and Vessels: Baselines and a Dataset ([arxiv](https://arxiv.org/abs/2306.07089))
-
-Authors: Ziqiao Weng, Jiancheng Yang, Dongnan Liu, Weidong Cai.
+Submitted to [MICCAI'24] Topology Repairing of Disconnected Pulmonary Airways and Vessels: A dataset and benchmark
 
 ## Abstract
 
