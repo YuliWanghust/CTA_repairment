@@ -1,16 +1,16 @@
 # CTA_repairment
 
-Submitted to [MICCAI'24] Topology Repairing of Disconnected Pulmonary Airways and Vessels: A dataset and benchmark
+Submitted to [MICCAI'24] Car-Dcros: Enhancing Cardiovascular Artery Segmentation through Disconnected Repairment and Open Curve Snake: A dataset and benchmark
 
 ## Abstract
 
-Accurate segmentation of pulmonary airways and vessels is crucial for the diagnosis and treatment of pulmonary diseases. However, current deep learning approaches suffer from disconnectivity issues that hinder their clinical usefulness. To address this challenge, we propose a post-processing approach that leverages a data-driven method to repair the topology of disconnected pulmonary tubular structures. Our approach formulates the problem as a keypoint detection task, where a neural network is trained to predict keypoints that can bridge disconnected components. We use a training data synthesis pipeline that generates disconnected data from complete pulmonary structures. Moreover, the new Pulmonary Tree Repairing (PTR) dataset is publicly available, which comprises 800 complete 3D models of pulmonary airways, arteries, and veins, as well as the synthetic disconnected data.
+The segmentation of cardiovascular arteries in 3D medical images holds significant promise for assessing vascular health. Despite advancements in existing algorithms, persistent challenges persist, particularly in accurately segmenting smaller vascular structures and those affected by plaque, where the arteries can appear disconnected. To solve these challenges, we present a novel post-processing approach that harnesses a data-driven method to rectify disconnected cardiovascular artery structures. First, we generate synthetic dataset to mimic disconnected cardiovascular structure. Then, our approach redefines the problem as a keypoints detection task, wherein a neural network is trained to predict key points capable of bridging disconnected components. Additionally, we employ an open curve active contour model to seamlessly connect disconnected points while optimizing for smoothness and intensity fitness. Finally, our pipeline is deployed on a real institutional dataset to demonstrate generalization and clinical utility of our approach.
 
 ## Key contributions
 
-- ****Novel Formulation of a Practical Research Problem****: We introduce a new formulation of the problem of pseudo-disconnected pulmonary tubular structures as a keypoint detection task, which is a significant contribution as it has not been extensively explored before.
-- **Effective Baseline with Efficient 3D-UNet**: We propose a two-channel 3D neural network that efficiently identifies key points and bridges disconnected components. Our model demonstrates decent performance, providing a strong baseline for future studies.
-- **Open-Source Benchmark**: To evaluate the proposed model, we have constructed a new pulmonary dataset named Pulmonary Tree Repairing (PTR), and designed proper metrics for performance examination.
+- ****Introducing Car-Dcros****, a novel pipeline designed to reframe CTA segmentation by incorporating disconnected component repairment and smoothness optimization.
+- ****Providing an open-source dataset**** of synthetic cardiovascular trees specifically tailored for key points detection.
+- ****Demonstrating state-of-the-art performance**** on vessel segmentation through benchmarking against three coronary CTA datasets.
 
 ## Dataset
 
