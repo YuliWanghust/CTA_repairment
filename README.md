@@ -2,10 +2,6 @@
 
 Submitted to [MICCAI'24] Car-Dcros: Enhancing Cardiovascular Artery Segmentation through Disconnected Repairment and Open Curve Snake: A dataset and benchmark
 
-## Abstract
-
-The segmentation of cardiovascular arteries in 3D medical images holds significant promise for assessing vascular health. Despite advancements in existing algorithms, persistent challenges persist, particularly in accurately segmenting smaller vascular structures and those affected by plaque, where the arteries can appear disconnected. To solve these challenges, we present a novel post-processing approach that harnesses a data-driven method to rectify disconnected cardiovascular artery structures. First, we generate synthetic dataset to mimic disconnected cardiovascular structure. Then, our approach redefines the problem as a keypoints detection task, wherein a neural network is trained to predict key points capable of bridging disconnected components. Additionally, we employ an open curve active contour model to seamlessly connect disconnected points while optimizing for smoothness and intensity fitness. Finally, our pipeline is deployed on a real institutional dataset to demonstrate generalization and clinical utility of our approach.
-
 ## Key contributions
 
 - ****Introducing Car-Dcros****, a novel pipeline designed to reframe CTA segmentation by incorporating disconnected component repairment and smoothness optimization.
@@ -24,7 +20,7 @@ The Cardiovascular Disconnected dataset is available [here](https://livejohnshop
 | -------------------------| ------ | ---------- | ----- |
 | ASCOS                    | 28     | 4          | 8     |
 | ImageCAS                 | 140    | 20         | 40    |
-| JHH                      | 0      | 0          | 10    |
+| Ours                     | 0      | 0          | 10    |
 | Sythesized               | 2688   | 384        | 928   |
 
 For each data type, the dataset includes the following files:
