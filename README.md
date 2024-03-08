@@ -61,9 +61,10 @@ To generate synthesized data in bulk for training purposes, run the following co
 ```
 python data_synthesis.py -source_dir raw_data/ -target_dir synthesized_data/ -volume_num=30 -radius_min=1 -radius_max=15 -points_threshold=10
 ```
-
+```
 src_dir: Directory containing the raw data.
 tgt_dir: Directory to store the synthesized data.
 num_volumes: Number of disconnected volumes to generate for each original volume in the raw data.
 min_radius, max_radius: Range of acceptable radii for selecting disconnected branches.
 points_thresh: Minimum number of points required for an edge (centerline) to be selected as a disconnected branch.
+```
