@@ -27,19 +27,17 @@ For each data type, the dataset includes the following files:
 
 **Raw_data**:
 
-```
 1. pulse_xxxxx_volume.nii.gz  % original volume
 2. pulse_xxxxx_centerline.nii.gz  % extracted centerline
 3. pulse_xxxxx_graph.graphml  % graph with edge information
-```
+
 
 **CTA Synthesized_data**:
 
-```
 1. xxx_idx_volume.nii.gz: Synthesized volume with a singular disconnection.
 2. xxx_idx_kp1_part.nii.gz: Component kp1 extracted from the synthesized volume.
 3. xxx_idx_kp2_part.nii.gz: Component kp2 extracted from the synthesized volume
-```
+
 
 ## Data Synthesis
 
