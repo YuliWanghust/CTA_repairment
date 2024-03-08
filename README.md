@@ -25,21 +25,20 @@ The Cardiovascular Disconnected dataset is available [here](https://livejohnshop
 
 For each data type, the dataset includes the following files:
 
-**Raw_data**: raw_data/train/:
+**Raw_data**:
 
 ```
-- pulse_xxxxx_volume.nii.gz: Original binarized volume with 0 representing background and 1 representing airways or vessels. (xxxxx refers to pulse id)
-- pulse_xxxxx_centerline.nii.gz: Extracted centerline of the original binarized volume.
-- pulse_xxxxx_graph.json: Graph dictionary with edge information for each branch of the pulmonary tree, including location and features of each edge.
+1. pulse_xxxxx_volume.nii.gz  % original volume
+2. pulse_xxxxx_centerline.nii.gz  % extracted centerline
+3. pulse_xxxxx_graph.graphml  % graph with edge information
 ```
 
-**Synthesized_data**: airway/synthesized_data/train/:
+**CTA Synthesized_data**:
 
 ```
-- pulse_xxxxx_idx_volume.nii.gz: Synthesized volume with a single disconnection.
-- pulse_xxxxx_idx_kp1_part.nii.gz: Component kp1 of the synthesized volume.
-- pulse_xxxxx_idx_kp2_part.nii.gz: Component kp2 of the synthesized volume.
-- pulse_xxxxx_idx_data.npz: Meta data of the synthesized volume, including above volumes with corresponding keypoints coordinates and features of the disconnected edge. This is directly laoded into our training pipeline.
+1. xxx_idx_volume.nii.gz: Synthesized volume with a singular disconnection.
+2. xxx_idx_kp1_part.nii.gz: Component kp1 extracted from the synthesized volume.
+3. xxx_idx_kp2_part.nii.gz: Component kp2 extracted from the synthesized volume
 ```
 
 ## Data Synthesis
@@ -48,15 +47,10 @@ For each data type, the dataset includes the following files:
 
 To set up the required environments, install the following dependencies:
 
-- Numpy:
+- Numpy & SimpleITK:
 
 ```
 pip install numpy
-```
-
-- SimpleITK
-
-```
 pip install SimpleITK
 ```
 
@@ -68,14 +62,8 @@ To generate synthesized data in bulk for training purposes, run the following co
 python data_synthesis.py -source_dir raw_data/ -target_dir synthesized_data/ -volume_num=30 -radius_min=1 -radius_max=15 -points_threshold=10
 ```
 
-The command line parameters have the following meanings:
-
-* source_dir: Directory of the raw data.
-* target_dir: Directory to store the synthesized data.
-* volume_num: The number of disconnected volumes to generate for each raw data (original volume).
-* radius_min, radius_max: Only edges with a radius within this range will be selected as a disconnected branch.
-* points_threshold: Only edges (centerlines) with a point number greater than this threshold will be selected as a disconnected branch.
-
-## TODO
-
-- [x] Our Pytorch implementation of keypoint detection will be released soon.
+src_dir: Directory containing the raw data.
+tgt_dir: Directory to store the synthesized data.
+num_volumes: Number of disconnected volumes to generate for each original volume in the raw data.
+min_radius, max_radius: Range of acceptable radii for selecting disconnected branches.
+points_thresh: Minimum number of points required for an edge (centerline) to be selected as a disconnected branch.
