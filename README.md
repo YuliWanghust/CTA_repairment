@@ -57,12 +57,22 @@ pip install SimpleITK
 To generate synthesized data in bulk for training purposes, run the following command:
 
 ```
-python data_synthesis.py -source_dir raw_data/ -target_dir synthesized_data/ -volume_num=30 -radius_min=1 -radius_max=15 -points_threshold=10
+python data_synthesis.py -source_dir raw_data/ -target_dir synthesized_data/ -volume_num=20 -radius_min=2 -radius_max=25 -points_threshold=15
 ```
 ```
-src_dir: Directory containing the raw data.
-tgt_dir: Directory to store the synthesized data.
-num_volumes: Number of disconnected volumes to generate for each original volume in the raw data.
-min_radius, max_radius: Range of acceptable radii for selecting disconnected branches.
-points_thresh: Minimum number of points required for an edge (centerline) to be selected as a disconnected branch.
+
+### Run Open Curve Snake
+
+The code provided is a Python implementation of the revised Open Curve Snakes methods. It does not aim to be a fast or efficient implementation. Instead, it is intended to be as brief, understandable and self-contained as possible.
+
+### Requirements
+
+To set up the required environments, install the following dependencies:
+
 ```
+pip install requriement.txt
+```
+
+### Test
+
+The code is documented and in tests.py
