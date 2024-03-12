@@ -68,11 +68,12 @@ The code provided is a Python implementation of the revised Open Curve Snakes me
 To set up the required environments, install the following dependencies:
 ```
 pip install requriement.txt
+python setup.py
 ```
 
 ### Test
 
-The code is documented and in tests.py
+The code is documented and in tests.py under the folder of test
 ```
 python ./test.py
 ```
