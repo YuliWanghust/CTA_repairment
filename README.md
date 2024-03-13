@@ -1,6 +1,6 @@
 # CTA_repairment
 
-Submitted to [MICCAI'24] Car-Dcros: Enhancing Cardiovascular Artery Segmentation through Disconnected Repairment and Open Curve Snake: A dataset and benchmark
+Submitted to [MICCAI'24] Car-Dcros: A Dataset and Benchmark for Enhancing Cardiovascular Artery Segmentation through Disconnected Components Repair and Open Curve Snake
 
 ## Key contributions
 
