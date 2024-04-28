@@ -56,7 +56,7 @@ pip install SimpleITK
 
 To generate synthesized data in bulk for training purposes, run the following command:
 ```
-python data_synthesis.py -source_dir raw_data/ -target_dir synthesized_data/ -volume_num=20 -radius_min=2 -radius_max=25 -points_threshold=15
+python data_synthesis.py -source_dir raw_data/ -target_dir synthesized_data/
 ```
 
 ### Run Open Curve Snake
