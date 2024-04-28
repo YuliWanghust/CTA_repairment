@@ -56,7 +56,7 @@ pip install SimpleITK
 
 To generate synthesized data in bulk for training purposes, run the following command:
 ```
-python data_synthesis.py -source_dir raw_data/ -target_dir synthesized_data/
+python CTA_synth.py -source_dir raw_data/ -target_dir synthesized_data/
 ```
 
 ### Run Open Curve Snake
