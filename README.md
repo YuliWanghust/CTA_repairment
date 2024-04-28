@@ -41,22 +41,11 @@ For each data type, the dataset includes the following files:
 
 ## Data Synthesis
 
-### Requirements
-
-To set up the required environments, install the following dependencies:
-
-- Numpy & SimpleITK:
-
-```
-pip install numpy
-pip install SimpleITK
-```
-
 ### Run
 
 To generate synthesized data in bulk for training purposes, run the following command:
 ```
-python CTA_synth.py -source_dir raw_data/ -target_dir synthesized_data/
+python CTA_syn.py
 ```
 
 ### Run Open Curve Snake
