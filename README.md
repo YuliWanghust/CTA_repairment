@@ -1,4 +1,4 @@
-# CTA_repairment
+# CTA_disconnected_repair
 
 Car-Dcros: A Dataset and Benchmark for Enhancing Cardiovascular Artery Segmentation through Disconnected Components Repair and Open Curve Snake
 
@@ -7,8 +7,8 @@ Part of the code and user instructions are modified or revised from morph snakes
 
 ## Key contributions
 
-- ****Introducing Car-Dcros****, a novel pipeline designed to reframe CTA segmentation by incorporating disconnected component repairment and smoothness optimization.
-- ****Providing an open-source dataset**** of synthetic cardiovascular trees specifically tailored for key points detection.
+- ****Introducing Car-Dcros****, a pipeline designed to reframe CTA segmentation by incorporating disconnected component repairment and smoothness optimization using an open-curve snake.
+- ****Providing an open-source dataset**** of synthetic cardiovascular dataset specifically tailored for key points detection.
 - ****Demonstrating state-of-the-art performance**** on vessel segmentation through benchmarking against three coronary CTA datasets.
 
 ## Dataset
