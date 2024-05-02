@@ -34,17 +34,16 @@ For each data type, the dataset includes the following files:
 2. pulse_xxxxx_centerline.nii.gz  % extracted centerline
 3. pulse_xxxxx_graph.graphml  % graph with edge information
 
-
-**CTA Synthesized_data**
-
-
 ## Data Synthesis
 
 ### Run
 
-To generate synthesized data in bulk for training purposes, run the following command:
 ```
 python CTA_syn.py
+```
+### Run disconnected searching algorithm
+```
+python Dis_search.py
 ```
 
 ### Run Open Curve Snake
