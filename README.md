@@ -12,7 +12,7 @@ Submitted to [MICCAI'24] Car-Dcros: A Dataset and Benchmark for Enhancing Cardio
 
 ![Visualizations of the PTR dataset.](quali_res_1.png)
 
-The Cardiovascular Disconnected dataset is available [here](https://livejohnshopkins-my.sharepoint.com/:f:/g/personal/ywang687_jh_edu/EgyMcSDR0KFLv5H7U8OxV7gBEYWflQcstMSk3vJoedqOag?e=NplTSK). It consists of the following data splits:
+The Cardiovascular Disconnected dataset is available [here](). It consists of the following data splits:
 
 ### Data Structure
 
