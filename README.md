@@ -1,6 +1,9 @@
 # CTA_repairment
 
-Submitted to [MICCAI'24] Car-Dcros: A Dataset and Benchmark for Enhancing Cardiovascular Artery Segmentation through Disconnected Components Repair and Open Curve Snake
+Car-Dcros: A Dataset and Benchmark for Enhancing Cardiovascular Artery Segmentation through Disconnected Components Repair and Open Curve Snake
+
+## Acknowledegment
+Part of the code and user instructions are modified or revised from morph snakes [here](https://github.com/pmneila/morphsnakes) and Pulmonary-Tree-Repairing [here](https://github.com/M3DV/pulmonary-tree-repairing)
 
 ## Key contributions
 
@@ -66,9 +69,6 @@ The code is documented and in tests.py under the folder of test
 ```
 python ./test.py
 ```
-
-## Acknowledegment
-Part of the code and user instructions are modified or revised from morph snakes [here](https://github.com/pmneila/morphsnakes) and Pulmonary-Tree-Repairing [here](https://github.com/M3DV/pulmonary-tree-repairing)
 
 
 
