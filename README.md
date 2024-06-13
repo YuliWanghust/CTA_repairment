@@ -19,12 +19,12 @@ The Cardiovascular Disconnected dataset is available [here](). It consists of th
 
 ### Data Structure
 
-| Type (graphs based imgs) | Train  | Validation | Test  |
-| -------------------------| ------ | ---------- | ----- |
-| ASCOS                    | 28     | 4          | 8     |
-| ImageCAS                 | 140    | 20         | 40    |
-| Ours                     | 0      | 0          | 10    |
-| Sythesized               | 2688   | 384        | 928   |
+| Type (graphs based imgs) | Train  | 
+| -------------------------| ------ | 
+| ASCOS                    | 28     | 
+| ImageCAS                 | 140    |
+| Ours                     | 0      | 
+| Sythesized               | 2688   | 
 
 For each data type, the dataset includes the following files:
 
